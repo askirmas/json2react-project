@@ -1,4 +1,4 @@
-import styles from './Layout.css';
+import styles from './index.css';
 import Link from 'next/link';
 
 export default function Layout(props) {

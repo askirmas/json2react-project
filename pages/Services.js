@@ -1,18 +1,21 @@
 import Layout from '../layout'
+import Link from 'next/link'
 
 export default function Services() {
   return (
       <Layout>
-          <div>
-          <h1>Services</h1>
-            <p>View our service offerings:</p>
-            <ul>
-                <li>React apps</li>
-                <li>React Native apps</li>
-                <li>Next apps</li>
-                <li>Gatsby apps</li>
-            </ul>
-          </div>
+<ul /*className={styles.services}*/>
+    <li>
+        <Link as="/services/first" href="/service?json=first">
+            <a>First</a>
+        </Link>
+    </li>
+    <li>
+        <Link as="/services/second" href="/service?json=second">
+            <a>Second</a>
+        </Link>
+    </li>
+</ul>
       </Layout>
   )
 }
