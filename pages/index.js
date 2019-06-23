@@ -7,7 +7,11 @@ function Service({content}) {
 }
 
 Service.getInitialProps = function({query: {json = 'home'}}) {
-  return { content: renderJson(require(`./${json}.json`)) }
+  let content = require(`./${json}.json`)
+  try {
+    content = require(`./${json}`).default(content)
+  } catch(e) {}
+  return { content: renderJson(content) }
 }
 
 export default withRouter(Service)
