@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 var _pages_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../pages.json */ "./pages.json", 1);
 
 
-var _jsxFileName = "c:\\dev\\code\\paging\\layout\\index.js";
+var _jsxFileName = "C:\\dev\\code\\paging\\layout\\index.js";
 
 
 
@@ -6421,9 +6421,9 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=c%3A%5Cdev%5Ccode%5Cpaging%5Cpages%5Cindex.js!./":
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5Cdev%5Ccode%5Cpaging%5Cpages%5Cindex.js!./":
 /*!**********************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=c%3A%5Cdev%5Ccode%5Cpaging%5Cpages%5Cindex.js ***!
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5Cdev%5Ccode%5Cpaging%5Cpages%5Cindex.js ***!
   \**********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10834,18 +10834,15 @@ module.exports = {"button":{"children":["Sweet home"]}};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layout */ "./layout/index.js");
-/* harmony import */ var _components_utils_renderJson__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/utils/renderJson */ "./components/utils/renderJson.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
-
-var _jsxFileName = "c:\\dev\\code\\paging\\pages\\index.js";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../layout */ "./layout/index.js");
+/* harmony import */ var _components_utils_renderJson__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/utils/renderJson */ "./components/utils/renderJson.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "C:\\dev\\code\\paging\\pages\\index.js";
 
 
 /*global window*/
@@ -10854,33 +10851,31 @@ var _jsxFileName = "c:\\dev\\code\\paging\\pages\\index.js";
 
 
 
-var homePage = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default()(__webpack_require__(/*! ../pages.json */ "./pages.json"))[0];
-
 function Service(_ref) {
-  var content = _ref.content,
+  var page = _ref.page,
       redirect = _ref.redirect;
-  if (redirect) return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  if (redirect) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 9
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     "http-equiv": "Refresh",
-    content: "0; url=./".concat(homePage, "/"),
+    content: "0; url=./".concat(page, "/"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }));
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, content);
+  }, page);
 }
 
 Service.getInitialProps = function (_ref2) {
@@ -10888,7 +10883,8 @@ Service.getInitialProps = function (_ref2) {
       json = _ref2$query.json,
       redirect = _ref2$query.redirect;
   if (redirect) return {
-    redirect: redirect
+    redirect: redirect,
+    page: json
   };
 
   var content = __webpack_require__("./pages sync recursive ^\\.\\/.*\\.json$")("./".concat(json, ".json"));
@@ -10898,11 +10894,11 @@ Service.getInitialProps = function (_ref2) {
   } catch (e) {}
 
   return {
-    content: Object(_components_utils_renderJson__WEBPACK_IMPORTED_MODULE_4__["default"])(content)
+    page: Object(_components_utils_renderJson__WEBPACK_IMPORTED_MODULE_3__["default"])(content)
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(Service));
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(Service));
 
 /***/ }),
 
@@ -10919,12 +10915,12 @@ module.exports = {"div":{"children":["Second one"]}};
 
 /***/ 0:
 /*!**************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=c%3A%5Cdev%5Ccode%5Cpaging%5Cpages%5Cindex.js ***!
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5Cdev%5Ccode%5Cpaging%5Cpages%5Cindex.js ***!
   \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=c%3A%5Cdev%5Ccode%5Cpaging%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=c%3A%5Cdev%5Ccode%5Cpaging%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5Cdev%5Ccode%5Cpaging%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5Cdev%5Ccode%5Cpaging%5Cpages%5Cindex.js!./");
 
 
 /***/ }),
