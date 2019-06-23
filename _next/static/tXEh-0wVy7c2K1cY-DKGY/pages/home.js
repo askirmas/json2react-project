@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["334c"],{"3D1N":function(n,o,w){(window.__NEXT_P=window.__NEXT_P||[]).push(["/home",function(){var n=w("CH2o");return{page:n.default||n}}])}},[["3D1N","5d41","9da1"]]]);
