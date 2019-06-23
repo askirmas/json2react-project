@@ -1,8 +1,7 @@
 import styles from './index.css'
 import Link from 'next/link'
 import pages from '../pages.json'
-
-export default function Layout(props) {
+export default function Layout({children}) {
   return (
     <div>
       <header className={styles.header}>
@@ -18,7 +17,7 @@ export default function Layout(props) {
         }</div>
       </header>
       <main>
-        {props.children}
+        {children}
       </main>
     </div>
   );
