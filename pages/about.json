@@ -1,0 +1,9 @@
+{
+  "div": {
+    "children": [{
+      "p" : {
+        "children": ["This is the about page"]
+      }
+    }]
+  }
+}

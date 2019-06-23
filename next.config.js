@@ -1,19 +1,17 @@
-const withCSS = require('@zeit/next-css');
-
-const pages = ['first', 'second']
+const withCSS = require('@zeit/next-css'),
+  pages = require('./pages')
 
 module.exports = withCSS({
   cssModules: true,
   exportPathMap: function() {
     return Object.assign(
       {
-        '/': { page: '/' },
-        '/services': { page: '/services' },
+        '/': { page: '/', query: {json: 'home'} }
       },
-      ...pages.map(page => (
+      ...Object.keys(pages).map(page => (
         {
-          [`/services/${page}`]: {
-            page: '/service',
+          [`/${page}`]: {
+            page: '/',
             query: {
               json: page
             }

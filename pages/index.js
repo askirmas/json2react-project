@@ -1,19 +1,13 @@
-import styles from './index.css';
-import Link from 'next/link';
+import { withRouter } from 'next/router';
+import Layout from '../layout';
+import renderJson from '../components/utils/renderJson'
 
-export default function Index() {
-    return (
-        <div className={styles.home}>
-            <div className={styles.center}>
-                <div className={styles.company}>Vijay Consulting Services</div>
-                <Link href="/services">
-                  <button className={styles.button}>View our services</button>
-                </Link>
-                <p className={styles.offering}>
-                    We offer custom application development using React
-                    framework
-                </p>
-            </div>
-        </div>
-    );
+function Service({content}) {
+  return <Layout>{content}</Layout>
 }
+
+Service.getInitialProps = function({query: {json = 'home'}}) {
+  return { content: renderJson(require(`./${json}.json`)) }
+}
+
+export default withRouter(Service)

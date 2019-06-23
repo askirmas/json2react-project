@@ -1,33 +1,25 @@
-import styles from './index.css';
-import Link from 'next/link';
+import styles from './index.css'
+import Link from 'next/link'
+import pages from '../pages.json'
 
 export default function Layout(props) {
-    return (
-        <div>
-            <header className={styles.header}>
-                <div className={styles.wrapper}>
-                    <h1>
-                        <Link href="/">
-                            <a className={styles.titleLink}>
-                                Vijay Consulting Services
-                            </a>
-                        </Link>
-                    </h1>
-                    <div>
-                        <ul className={styles.menu}>
-                            <li>
-                                <Link href="/"><a>Home</a></Link>
-                            </li>
-                            <li>
-                                <Link href="/services"><a>Services</a></Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
-            <main>
-                {props.children}
-            </main>
-        </div>
-    );
+  return (
+    <div>
+      <header className={styles.header}>
+        <div className={styles.wrapper}>{
+          Object.entries(pages)
+          .map(([uri, title]) =>
+            <div className={styles.menu}>
+              <Link as={`/${uri}`} href={`/?json=${uri}`}>
+                <a>{title}</a>
+              </Link>
+            </div>
+          )
+        }</div>
+      </header>
+      <main>
+        {props.children}
+      </main>
+    </div>
+  );
 }
