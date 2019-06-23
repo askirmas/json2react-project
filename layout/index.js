@@ -9,7 +9,7 @@ export default function Layout({children}) {
           Object.entries(pages)
           .map(([uri, title]) =>
             <div className={styles.menu}>
-              <Link as={`/${uri}`} href={`/?json=${uri}`}>
+              <Link as={`../${uri}`} href={`../?json=${uri}`}>
                 <a>{title}</a>
               </Link>
             </div>
