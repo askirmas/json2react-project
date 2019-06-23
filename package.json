@@ -1,13 +1,18 @@
 {
   "name": "paging",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/askirmas/json2react-project.git"
+  },
   "scripts": {
     "dev": "next",
-    "start": "next start",
     "build": "next build",
-    "export": "next export"
+    "start": "npm run build && next start",
+    "export": "npm run build && next export",
+    "predeploy": "npm run export",
+    "deploy": "touch ./out/.jekyll && gh-pages -d out"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +22,8 @@
     "next": "^8.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
